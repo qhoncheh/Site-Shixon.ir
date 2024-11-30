@@ -1,0 +1,443 @@
+body{
+    direction: rtl;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box !important;
+}
+.menu{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+}
+.menu-top{
+    background: url(../shixon/datas/_TopCampain1258080682.jpg);
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #2e003f;
+    cursor: pointer;
+    border-top: 1px solid #2e003f; 
+    border-bottom: 1px solid #2e003f; 
+}
+ul.menu-center-list{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center;
+    margin: 0;
+}
+.menu-center-right{
+    display: flex;
+}
+.menu-center-right svg{
+    color: #8e44ad;
+}
+
+ul.menu-center-list li{
+    list-style: none;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+    padding: 10px;
+}
+.buy{
+    position: relative;
+}
+.buyBasket{
+
+}
+.buy > div.empty-sabad{
+    width: 330px;
+    height: 60px;
+    background-color: #fff;
+    position: absolute;
+    top: 44px;
+    right: -1px;
+    border: 1px solid #ccc;
+    border-top: 3px solid #8e44ad;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 10px;
+    z-index: 1;
+}
+.buy > div.empty-sabad p{
+    line-height: 15px;
+    font-size: 14px;
+    background-color: #fdf9ff;
+    border: 1px solid #8e44ad;
+    border-radius: 5px;
+    color: #8e44ad;
+    padding: 10px;
+    text-align: center;
+}
+.buy:hover > div.empty-sabad{
+    visibility: visible;
+    opacity: 1;
+}
+.buyCounter{
+    color: #8e44ad;
+    background: #f5f5f5;
+    padding: 0 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 11px;
+}
+.searchBox{
+    border-right: none !important;
+    padding: 0px !important;
+}
+.searchBox input{
+    line-height: 38px;
+    width: 446px;
+    border: none;
+}
+.searchBox input:focus{
+    outline: none;
+}
+
+
+
+.menu-center-left{
+    display: flex;
+}
+.menu-center-left li{
+    transition: 0.4s;
+    color: #808080;
+}
+.menu-center-left li:hover{
+    background-color: #8e44ad;
+    transition: 0.4s;
+    color: #fff;
+}
+.menu-center-left li:last-child{
+    border-left: 1px solid #ccc;
+}
+
+
+
+
+
+.menu-bottom{
+
+}
+.menu-bottom-right{
+    /* border: 2px solid blue; */
+
+}
+.menu-bottom-right > ul{
+    position: relative;
+}
+.menu-bottom-right > ul  li{
+    list-style: none;
+    cursor: pointer;
+    color: #8d8d8d;
+    padding: 5px;
+    transition: 0.5s;
+}
+.menu-bottom-right > ul li:nth-child(10){
+    color:#a0f;
+}
+.menu-bottom-right > ul li:nth-child(11){
+    color:#a0f;
+}
+.menu-bottom-right > ul li:nth-child(12){
+    color:#a0f;
+}
+.menu-bottom-right > ul > li:last-child{
+    color: #e040fb;
+}
+.menu-bottom-right > ul  li:hover{
+    color: #fff;
+    background: #8b10b5;
+    
+}
+.menu-bottom-right > ul  li.woman div{
+    width: 1155px;
+    height: 400px;
+    background-color: #ccc;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-top: 3px solid #8b10b5;;
+    top: 50px;
+}
+.menu-bottom-right > ul  li.woman:hover div{
+    visibility: visible;
+    opacity: 1;
+    top: 35px;
+}
+.menu-bottom-left{
+    /* border: 2px solid red; */
+    direction: ltr;
+}
+
+
+
+.slider{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    direction: ltr;
+
+}
+.slider .right{
+    position: absolute;
+    right: 5px;
+    font-weight: 900;
+    font-size: 35px;
+    z-index: 1;
+    top: 200px;
+    cursor: pointer;
+    background: url(../images/right.png) no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    
+}
+.slider .right:hover{
+    opacity: 0.6;
+    
+}
+.slider .left{
+    position: absolute;
+    left: 5px;
+    font-size: 35px;
+    z-index: 1;
+    font-weight: 900;
+    top: 200px;
+    cursor: pointer;
+    background: url(../images/left.png) no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+}
+.slider .left:hover{
+    opacity: 0.6;
+}
+
+.slider .gal{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+    left: 0;
+    
+}
+.slider .gal .items{
+    width: 100%;
+}
+.slider .gal .items img{
+    width: 100%;
+    height: 100%;
+}
+ul.go{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    top: -25px;
+    gap: 6px;
+    direction: ltr;
+
+}
+ul.go li{
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: width 0.3s;
+}
+ul.go li:hover{
+    background-color: #fff;
+}
+.selected{
+    width: 30px !important;
+    background-color: #fff !important;
+}
+/* end of slider */
+
+
+.advantages{
+
+}
+.advantages img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.latestProducts{
+    border-top: 1px solid #e4e5e7;
+    border-bottom: 1px solid #e4e5e7;
+    gap: 5px;
+}
+
+
+.latestProducts .item{
+    cursor: pointer;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.latestProducts .item img{
+    width:100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.latestProducts .item:hover img{
+    transform: scale(1.2);
+    filter: brightness(0.8);
+}
+
+
+.latestProducts .item:nth-child(1) span{
+    display: inline-block;
+    width: 600px;
+    height: 150px;
+    background-color: rgba(220, 220, 220, 0.6);
+    /* background-color: red; */
+    transform: rotate(37deg);
+    position: absolute;
+    right: -200px;
+    top: -85px;
+    transition: 0.5s;
+}
+.latestProducts .item:nth-child(1):hover span{
+    transform: translate(-280px,320px) rotate(37deg);
+}
+
+
+.latestProducts .item:nth-child(2){}
+.latestProducts .item:nth-child(3){}
+
+.latestProducts .item:nth-child(4) span{
+    display: inline-block;
+    width: 480px;
+    height: 150px;
+    background-color: rgba(220, 220, 220, 0.6);
+    /* background-color: red; */
+    transform: rotate(45deg);
+    position: absolute;
+    right: -200px;
+    top: -85px;
+    transition: 0.5s;
+}
+.latestProducts .item:nth-child(4):hover span{
+    transform: translate(-320px,320px) rotate(45deg);
+}
+
+
+
+/* onlineshopshixon: */
+div.online-shop-shixon{
+    border-top: 1px solid #e4e5e7;
+    border-bottom: 1px solid #e4e5e7;
+}
+div.online-shop-shixon h3{
+    position: relative;
+    top: -23px;
+
+}
+div.online-shop-shixon h3 span{
+    color: #8e44ad;
+    font-size: 16px;
+    border: 1px solid #e4e5e7;
+    border-radius: 3px;
+    padding: 6px 32px;
+    font-family: tahoma;
+    background-color: #fff;
+}
+div.online-shop-shixon p{
+    font-family: arial;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+
+
+/* footer: */
+footer{
+    /* height: 300px; */
+    /* background-color: yellow; */
+}
+footer .top-footer{
+    background: url(../shixon/datas/TextBack.jpg);
+    background-color: rgba(0,0,0,.99);
+    background-position: 50% -1264.5px;
+    height: 335px;
+    background-attachment:fixed ;
+
+}
+footer .top-footer > div{
+    background-color: rgba(0,0,0,.56);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+footer .top-footer > div div.container img{
+    width: 304px;
+}
+footer .top-footer > div div.container button{
+    width: 130px;
+    background-color: #67cbc5;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    
+}
+footer .top-footer > div div.container button:hover{
+    border-radius: 0;
+}
+
+footer .center-footer{
+
+}
+footer .bottom-footer{
+
+}
+
+
+
+
+
+
+.telegram-img{
+    position: fixed;
+    background: #8b10b5;
+    width: 40px;
+    height: 108px;
+    bottom: -72px;
+    right: 0;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    transition: all ease .6s;
+    padding-top: 3px;
+}
+.telegram-img:hover{
+    bottom: 0;
+}
+
+.telegram-img a {
+    text-decoration: none;
+    color: #fff !important;
+    
+}
+.telegram-img a h4{
+    font-size: 11px;
+    width: 79%;
+    margin: 0 auto;
+    line-height: 20px;
+}
